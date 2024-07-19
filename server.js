@@ -6,7 +6,6 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-
 server.use(cors());
 
 server.use('/api', router);
